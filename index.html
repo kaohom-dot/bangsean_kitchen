@@ -1,97 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bangsaen Kitchen at Palmy</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    </style>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bangsaen Kitchen at Palmerston North, New Zealand</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
 </head>
-
 <body>
+   
+<!-- header section starts     -->
 
-  <div class="container bg">
-    <div class="navBar">
-      <div class="logo">
-        <a href="#">
-          <i class="fas fa-suitcase-rolling"></i>
-        </a>
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#" class="logo"> <i class="fas fa-utensils"></i> Bangsaen Kitchen </a>
+
+      <nav class="navbar">
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#food">food</a>
+         <a href="#menu">menu</a>
+         <a href="#order">order</a>
+        <!--  <a href="#blogs">blogs</a> -->
+      </nav>
+   
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </section>
+
+</header>
+
+<!-- header section ends    -->
+
+<!-- home section starts  -->
+
+<div class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+            <div class="content">
+               <span>Thai food</span>
+               <h3>Bangsaen Kitchen</h3>
+               <a href="#" class="btn">get started</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+            <div class="content">
+               <span>Thai food</span>
+               <h3>delicious food</h3>
+               <a href="#" class="btn">get started</a>
+            </div>
+         </div>
+
       </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
 
-    <div id="home" class="content">
-      <div class="Bangsaen" style="width:50%;">
-        <div class="tnx">
-          <h2><i class="fas fa-map-marker-alt"></i> Thailand</h2>
-        </div>
-        <div class="txt">
-          <h1>Bangsaen Kitchen</h1>
-        </div>
-        <p>Authentic Thai Cuisine & Asian Food</p>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</div>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="image">
+      <img src="images/about-img.png" alt="">
+   </div>
+
+   <div class="content">
+      <h3 class="title">Welcome to our restaurant</h3>
+      <p>Our restaurant is a Thai restaurant in New Zealand that focuses on offering authentic, high-quality Thai cuisine. With a diverse and well-known menu, we use fresh ingredients and genuine spices from Thailand to maintain the true flavors of Thai food. Besides providing delicious dishes, we pay close attention to every step of preparation and service to ensure that our customers have the best possible experience.</p>
+      <a href="#" class="btn">read more</a>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- food section starts  -->
+
+<div class="odd-section">
+
+   <section class="food" id="food">
+
+      <div class="heading">  
+         <span>popular dishes</span>
+         <h3>our delicious food</h3>
+      </div>
+   
+      <div class="swiper food-slider">
+   
+         <div class="swiper-wrapper">
+   
+
+            <div class="swiper-slide slide" data-name="food-1">
+               <img src="images/food-img-1.jpeg" alt="">
+               <h3>Nasi Goreng</h3>
+               <div class="price">$23.99</div>
+            </div>
+   
+            <div class="swiper-slide slide" data-name="food-2">
+               <img src="images/food-img-2.jpeg" alt="">
+               <h3>Sweet and Sour</h3>
+               <div class="price">$25.00</div>
+            </div>
+   
+            <div class="swiper-slide slide" data-name="food-3">
+               <img src="images/food-img-3.jpeg" alt="">
+               <h3>Kra Prao </h3>
+               <div class="price">$22.30</div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="food-4">
+               <img src="images/food-img-4.jpeg" alt="">
+               <h3>Pad Thai</h3>
+               <div class="price">$25.30</div>
+            </div>
+   
+            <div class="swiper-slide slide" data-name="food-5">
+               <img src="images/food-img-5.jpeg" alt="">
+               <h3>Moo Ping</h3>
+               <div class="price">$12.50</div>
+            </div>
+   
+         </div>
+   
+         <div class="swiper-pagination"></div>
+   
+      </div>
+   
+   </section>
+
+</div>
+
+<!-- food section ends -->
+
+<!-- food preview section starts  -->
+
+
+<section class="food-preview-container">
+
+   <div id="close-preview" class="fas fa-times"></div>
+
+   <div class="food-preview" data-target="food-1">
+      <img src="images/food-img-1.jpeg" alt="Food Image 1">
+   </div>
+
+   <div class="food-preview" data-target="food-2">
+      <img src="images/food-img-2.jpeg" alt="Food Image 2">
+   </div>
+
+   <div class="food-preview" data-target="food-3">
+      <img src="images/food-img-3.jpeg" alt="Food Image 3">
+   </div>
+
+   <div class="food-preview" data-target="food-4">
+      <img src="images/food-img-4.jpeg" alt="Food Image 4">
+   </div>
+
+   <div class="food-preview" data-target="food-5">
+      <img src="images/food-img-5.jpeg" alt="Food Image 5">
+   </div>
+
+</section>
+
+<!-- food preview section ends -->
+
+
+<!-- menu section starts  -->
+
+<div class="odd-section">
+
+   <section class="menu" id="menu">
+
+      <div class="heading">
+         <span>our menu</span>
+         <h3>our popular dishes</h3>
+      </div>
+   
+      <div class="swiper menu-slider">
+   
+         <div class="swiper-wrapper">
+   
+            <div class="swiper-slide slide">
+               <h3 class="title">Most Favorite Menu</h3>
+               <div class="box-container">
+                  <div class="box">
+                     <div class="info">
+                        <h3>PADTHAI</h3>
+                        <p>Popular stir fried white noodle with egg in tamarind sauce & peanut topping.</p>
+                     </div>
+                     <div class="price">$17.90</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>PAD MED </h3>
+                        <p>Homemade Rice & Vege wrapped in Pastry.</p>
+                     </div>
+                     <div class="price">$19.00</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>NASI GORENG</h3>
+                        <p>Malaysian style fried rice with vege.</p>
+                     </div>
+                     <div class="price">$17.40</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>SWEET & SOUR</h3>
+                        <p>Stir fried meat & vege in Sweet & Sour sauce.</p>
+                     </div>
+                     <div class="price">$18.00</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>GREEN CURRY</h3>
+                        <p>Thai Green Curry with coconut milk and vege.</p>
+                     </div>
+                     <div class="price">$19.00</div>
+                  </div><div class="box">
+                     <div class="info">
+                        <h3>THAI RED CURRY</h3>
+                        <p>Thai Red Curry with Coconut milk and vege.</p>
+                     </div>
+                     <div class="price">$19.00</div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="swiper-slide slide">
+               <h3 class="title">Appetisers</h3>
+               <div class="box-container">
+                  <div class="box">
+                     <div class="info">
+                        <h3>PORK DUMPLING (5 PCS)</h3>
+                        <p>Homemade deep fried pork dumpling.</p>
+                     </div>
+                     <div class="price">$8.50</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>ROTI W SATAY SAUCE</h3>
+                        <p>Pan fried Roti with dipping satay sauce.</p>
+                     </div>
+                     <div class="price">$8.50</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>TRIANGLE (4 PCS)</h3>
+                        <p>Homemade Rice & Vege wrapped in Pastry.</p>
+                     </div>
+                     <div class="price">$8.50</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>THAI SATAY (4 PCS)</h3>
+                        <p>Grilled skewer marinated chicken with Thai satay sauce.</p>
+                     </div>
+                     <div class="price">$12.50</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>MOO PING (4 PCS)</h3>
+                        <p>Grilled skewer marinated Pork.</p>
+                     </div>
+                     <div class="price">$12.50</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>SPICY SQUID (6 PCS)</h3>
+                        <p>Deep fried Spicy Squid.</p>
+                     </div>
+                     <div class="price">$12.50</div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="swiper-slide slide">
+               <h3 class="title">Meat & Poutry</h3>
+               <div class="box-container">
+                  <div class="box">
+                     <div class="info">
+                        <h3>PAD KRATIAM PRIKTHAI</h3>
+                        <p>Stir Fried Meat & Vege in Garlic & Pepper Sauce.</p>
+                     </div>
+                     <div class="price">$17.99</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>PAD KRA PRAO (HOT)</h3>
+                        <p>Stir Fried Meat with Vege in Thai Basil Paste.</p>
+                     </div>
+                     <div class="price">$17.99</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>PAD PED (HOT HOT)</h3>
+                        <p>Stir Fried Meat & Vege in Thai Red Curry Sauce.</p>
+                     </div>
+                     <div class="price">$18.99</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>GINGER DUCK</h3>
+                        <p>Stir Fried Homemade Roast Duck & Vege in Thai Ginger Sauce.</p>
+                     </div>
+                     <div class="price">$18.99</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>SWEET & SOUR</h3>
+                        <p>Stir Fried Meat & Vege in Sweet & Sour Sauce.</p>
+                     </div>
+                     <div class="price">$19.99</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>PAD MED</h3>
+                        <p>Stir Fried Meat with Vege in Mild Thai Sauce and Cashew Nut.</p>
+                     </div>
+                     <div class="price">$19.99</div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="swiper-slide slide">
+               <h3 class="title">Seafood </h3>
+               <div class="box-container">
+                  <div class="box">
+                     <div class="info">
+                        <h3>SWEET CHILI SALMON</h3>
+                        <p>Stir Fried Salmon Fillet with Vege in Mild Thai Sweet Chili Sauce.</p>
+                     </div>
+                     <div class="price">$22.50</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>PRAWN PAD BROCCOLI</h3>
+                        <p>Stir Fried King Prawn & Vege in Oyster & Soy sauce.</p>
+                     </div>
+                     <div class="price">$22.50</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>PRAWN PAD KRATIAM PRIKTHAI</h3>
+                        <p>Stir Fried Prawn & Vege in Garlic & Pepper Sauce.</p>
+                     </div>
+                     <div class="price">$22.50</div>
+                  </div>
+                  <div class="box">
+                     <div class="info">
+                        <h3>SEAFOOD PAD KRATIAM PRIKTHAI</h3>
+                        <p>Stir Fried Mix Seafood & Vege in Garlic & Pepper Sauce.</p>
+                     </div>
+                     <div class="price">$22.50</div>
+                  </div>
+               </div>
+            </div>
+   
+         </div>
+   
+         <div class="swiper-pagination"></div>
+   
+      </div>
+   
+   </section>
+
+</div>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<div class="order-container">
+
+   <section class="order" id="order">
+
+      <div class="heading">
+         <span>order now</span>
+         <h3>Delivery</h3>
+      </div>
+   
+      <form action="">
+         <div class="box-container">
+            <div class="box">
+               <div class="inputBox">
+                  <span>full name</span>
+                  <input type="text" placeholder="your name">
+               </div>
+               <div class="inputBox">
+                  <span>food name</span>
+                  <input type="text" placeholder="food you want">
+               </div>
+               <div class="inputBox">
+                  <span>order details</span>
+                  <input type="text" placeholder="specifics with food">
+               </div>
+               <div class="inputBox">
+                  <span>your address</span>
+                  <textarea name="" placeholder="your address" id="" cols="30" rows="10"></textarea>
+               </div>
+            </div>
+            <div class="box">
+               <div class="inputBox">
+                  <span>number</span>
+                  <input type="number" placeholder="your number">
+               </div>
+               <div class="inputBox">
+                  <span>how much</span>
+                  <input type="number" placeholder="how many you want">
+               </div>
+               <div class="inputBox">
+                  <span>when you want</span>
+                  <input type="datetime-local">
+               </div>
+               <div class="inputBox">
+                  <span>our address</span>
+                  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.4979286181906!2d175.61182327681675!3d-40.3534823834145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d41b35823d456d7%3A0x819c89a4a029a6e7!2sBangsaenKitchen!5e0!3m2!1sen!2sth!4v1710656000094!5m2!1sen!2sth" allowfullscreen="" loading="lazy"></iframe>
+               </div>
+            </div>
+         </div>
+         <input type="submit" value="order now" class="btn">
+      </form>
+      
+   </section>
+
+</div>
+
+<!-- order section ends -->
+
+<!-- blogs section starts  -->
+
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>Mon 12.00pm-2:00pm & 4:30pm-8.30pm</p>
+         <p>Wed-Fri 11.00am-2:00pm & 4:30pm- 8.30pm</p>
+         <p>Sat 4.30pm.- 8.30pm</p>
+         <p>Sun 11.00am-2:00pm & 4:30pm-8.30pm.</p>
       </div>
 
-      <div class="card" style="width:50%;">
-        <a href="menu1.html" target="_blank">
-          <div class="box1">
-            <h2>Recommend</h2>
-          </div>
-        </a>
-
-        <a href="menu2.html" target="_blank">
-          <div class="box2">
-            <h2>Appetisers</h2>
-          </div>
-        </a>
-
-        <a href="menu3.html" target="_blank">
-          <div class="box3">
-            <h2>Curry </h2>
-          </div>
-        </a>
-
-        <a href="menu4.html" target="_blank">
-          <div class="box4">
-            <h2>Seafood</h2>
-          </div>
-        </a>
-
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>phone</h3>
+         <p>(06)213-8099</p>
       </div>
 
-    </div>
-
-  </div>
-
-  <div id="contact" class="bottom-content">
-    <div class="bottom-content-text">
-      <h1>Contact</h1>
-      <p><i style="font-size:24px" class="fa">&#xf041;</i> PO Box 15 2 Grey Street Palmerston Norh 4410</p>
-      <div class="bottom_content_province">
-        <p><i style="font-size:20px" class="fa">&#xf0e0;</i> info@palmyrescue.nz</p>
-        <p><i style="font-size:24px" class="fa">&#xf095;</i> (06) 827 6094</p>
-        <br> <br><br>
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+         <h3>facebook</h3>
+         <p>www.facebook.com/Bangsaen-Kitchen</p>
       </div>
-    </div>
-  </div>
 
-  <div>
-    <div class="google-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.4979286181906!2d175.61182327681675!3d-40.3534823834145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d41b35823d456d7%3A0x819c89a4a029a6e7!2sBangsaenKitchen!5e0!3m2!1sen!2sth!4v1710656000094!5m2!1sen!2sth"
-        width="100%" height="450" "border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
+      <div class="icons">
+         <i class="fas fa-map"></i>
+         <h3>address</h3>
+         <p>108 Broadway Avenue, Palmerston North 4410</p>
+      </div>
+
+   </div>
+
+   <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+   </div>
+
+   <div class="credit"> created by <span>Jasmine Sriborrirux</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends  -->
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+   lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
 
 </body>
-
 </html>
